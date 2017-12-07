@@ -9,3 +9,7 @@ export default {
   name: 'profil',
 }
 </script>
+
+<style scoped>
+
+</style>

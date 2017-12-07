@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="home">
     <h1>{{ msg }}</h1>
     <ul class="sidebar">
       <router-link :to="{ name: 'profil' }" tag="li">Profil</router-link>
@@ -12,17 +12,22 @@
 </template>
 
 <script>
-  export default {
-    name: 'hello',
-    data () {
-      return {
-        msg: 'Bienvenue !'
-      }
+export default {
+  name: 'home',
+  data () {
+    return {
+      msg: 'Bienvenue !'
     }
   }
+}
 </script>
 
 <style scoped>
+.sidebar {
+  display: flex;
+  justify-content: space-around;
+}
+
 .sidebar li {
   cursor: pointer;
 }

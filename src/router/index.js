@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Hello from '../components/Hello.vue'
+import Home from '../components/Home.vue'
 import Profil from '../components/Profil.vue'
 import Conduite from '../components/Conduite.vue'
 import Urgence from '../components/Urgence.vue'
@@ -13,8 +13,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'hello',
-      component: Hello
+      name: 'home',
+      component: Home
     },
     {
       path: '/profil',
