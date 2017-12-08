@@ -13,38 +13,39 @@
     <ul>
       <!-- RADIO  -->
       <li>
-        <img src="../assets/logo.png" class="badge" v-on:click="display" id="radio" />
-        <progress value="40" max="100"></progress>
+        <img src="../assets/radio.png" class="badge" v-on:click="display" id="radio" />
+        <progress :value="level_radio" max="3"></progress>
       </li>
 
       <!-- SAM  -->
       <li>
-        <img src="../assets/logo.png" class="badge" v-on:click="display" id="sam" />
-        <progress value="40" max="100"></progress>
+        <img src="../assets/sam.png" class="badge" v-on:click="display" id="sam" />
+        <!-- <p id="level">{{ level_sam }}</p> -->
+        <progress :value="level_sam" max="3"></progress>
       </li>
 
       <!-- EVENEMENT  -->
       <li>
-        <img src="../assets/logo.png" class="badge" v-on:click="display" id="evenement" />
-        <progress value="40" max="100"></progress>
+        <img src="../assets/evenement.png" class="badge" v-on:click="display" id="evenement" />
+        <progress :value="level_evenement" max="3"></progress>
       </li>
 
       <!-- CONDUITE  -->
       <li>
-        <img src="../assets/logo.png" class="badge" v-on:click="display" id="conduite" />
-        <progress value="40" max="100"></progress>
+        <img src="../assets/conduite.png" class="badge" v-on:click="display" id="conduite" />
+        <progress :value="level_conduite" max="3"></progress>
       </li>
 
       <!-- APPLI  -->
       <li>
-        <img src="../assets/logo.png" class="badge" v-on:click="display" id="appli" />
-        <progress value="40" max="100"></progress>
+        <img src="../assets/click.png" class="badge" v-on:click="display" id="appli" />
+        <progress :value="level_appli" max="3"></progress>
       </li>
 
       <!-- PROFIL  -->
       <li>
-        <img src="../assets/logo.png" class="badge" v-on:click="display" id="profil" />
-        <progress value="40" max="100"></progress>
+        <img src="../assets/profil.png" class="badge" v-on:click="display" id="profil" />
+        <progress :value="level_profil" max="3"></progress>
       </li>
     </ul>
   </div>
@@ -56,6 +57,12 @@
       return {
         message: '',
         descriptif: '',
+        level_radio: 1,
+        level_sam: 1,
+        level_evenement: 1,
+        level_conduite: 1,
+        level_appli: 1,
+        level_profil: 1,
         radio: [
           "Vous avez écouté la radio",
           "A levé le voile du silence",
@@ -97,38 +104,32 @@
     methods: {
       display: function (e) {
         //afficher le bon niveau (bdd)
-        let level_radio = 1;
-        let level_sam = 1;
-        let level_evenement = 1;
-        let level_conduite = 1;
-        let level_appli = 1;
-        let level_profil = 1;
 
         document.getElementById("cache").style.display = 'block';
 
         switch(e.target.id) {
           case "radio":
-            this.message = this.radio[level_radio];
+            this.message = this.radio[this.level_radio];
             this.descriptif = this.radio[0];
             break;
           case "sam":
-            this.message = this.sam[level_sam];
+            this.message = this.sam[this.level_sam];
             this.descriptif = this.sam[0];
             break;
           case "evenement":
-            this.message = this.evenement[level_evenement];
+            this.message = this.evenement[this.level_evenement];
             this.descriptif = this.evenement[0];
             break;
           case "conduite":
-            this.message = this.conduite[level_conduite];
+            this.message = this.conduite[this.level_conduite];
             this.descriptif = this.conduite[0];
             break;
           case "appli":
-            this.message = this.appli[level_appli];
+            this.message = this.appli[this.level_appli];
             this.descriptif = this.appli[0];
             break;
           case "profil":
-            this.message = this.profil[level_profil];
+            this.message = this.profil[this.level_profil];
             this.descriptif = this.profil[0];
             break;
         }
@@ -142,8 +143,10 @@
 
 <style scoped>
   ul {
+    position: relative;
     list-style: none;
     padding: 0;
+    z-index:0;
   }
 
   .badge {
@@ -155,6 +158,7 @@
     display: none;
     margin: auto;
     position: absolute;
+    z-index: 2000;
     width: 100%;
     height: 100%;
     background-color: white;
@@ -169,6 +173,13 @@
     display: block;
     margin: auto;
     border: 1px solid black;
+  }
+
+  #level {
+    font-size: 3em;
+    position:absolute;
+    top: 20px;
+    margin: auto;
   }
 
 </style>
