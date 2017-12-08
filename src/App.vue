@@ -14,6 +14,7 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css?family=La+Belle+Aurore');
 body {
   background: #2980b9;
 }
@@ -27,5 +28,12 @@ body {
 }
 .app-title {
   cursor: pointer;
+  font-family: 'La Belle Aurore';
+}
+ul {
+    padding: 0;
+}
+ul li {
+    list-style: none;
 }
 </style>
