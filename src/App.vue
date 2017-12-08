@@ -4,6 +4,13 @@
       Code Ta Route
     </router-link>
     <router-view></router-view>
+    <ul class="sidebar">
+      <router-link :to="{ name: 'profil' }" tag="li">Profil</router-link>
+      <router-link :to="{ name: 'conduite' }" tag="li">Conduite</router-link>
+      <router-link :to="{ name: 'urgence' }" tag="li">Urgence</router-link>
+      <router-link :to="{ name: 'trafic' }" tag="li">Trafic</router-link>
+      <router-link :to="{ name: 'prevention' }" tag="li">Prévention</router-link>
+    </ul>
   </div>
 </template>
 
@@ -15,25 +22,56 @@ export default {
 
 <style>
 @import url('https://fonts.googleapis.com/css?family=La+Belle+Aurore');
+
+*, *:after, *:before {
+    box-sizing: border-box;
+}
 body {
-  background: #2980b9;
+    padding: 0;
+    margin: 0;
 }
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #fff;
-  margin-top: 60px;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    background: linear-gradient(135deg, #FFC6B0, #E8835A);
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #fff;
 }
 .app-title {
-  cursor: pointer;
-  font-family: 'La Belle Aurore';
+    width: 100%;
+    display: inline-block;
+    margin: 0;
+    padding-top: 20px;
+    position: fixed;
+    cursor: pointer;
+    font-family: 'La Belle Aurore';
 }
 ul {
     padding: 0;
+    margin: 0;
 }
 ul li {
     list-style: none;
+}
+#home {
+    padding: 150px 0 60px;
+}
+.sidebar {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FFF;
+    color: #E8835A;
 }
 </style>

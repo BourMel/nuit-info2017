@@ -19,9 +19,9 @@ export default {
   data() {
     return {
       msgs: [
+        "Lâchez ce téléphone pour conduire !",
         "N'oubliez pas d'attacher votre ceinture !",
-        "Avez vous fait récemment votre contrôle technique ?",
-        "Lâchez ce téléphone pour conduire !"
+        "Avez-vous fait récemment votre contrôle technique ?",
       ],
       radio: {
         title: "Chargement..."
