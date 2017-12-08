@@ -141,6 +141,10 @@
 </script>
 
 <style scoped>
+    #app {
+        background: linear-gradient(135deg, red, blue) !important;
+    }
+
   ul {
     list-style: none;
     padding: 0;
