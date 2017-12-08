@@ -53,6 +53,7 @@ body {
     font-family: 'La Belle Aurore';
     background-color: #FFF;
     color: #f2a487;
+    z-index:1;
 }
 ul {
     padding: 0;

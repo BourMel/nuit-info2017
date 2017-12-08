@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="wrapper">
     <h1>Page de profil</h1>
 
     <div id="cache" v-on:click="hide">
@@ -104,8 +104,9 @@
     methods: {
       display: function (e) {
         //afficher le bon niveau (bdd)
-
-        document.getElementById("cache").style.display = 'block';
+        var cache = document.getElementById("cache");
+        cache.style.display = 'block';
+        cache.style.top = 0;
 
         switch(e.target.id) {
           case "radio":
@@ -142,11 +143,11 @@
 </script>
 
 <style scoped>
+
   ul {
     position: relative;
     list-style: none;
     padding: 0;
-    z-index:0;
   }
 
   .badge {
@@ -158,7 +159,7 @@
     display: none;
     margin: auto;
     position: absolute;
-    z-index: 2000;
+    z-index:1;
     width: 100%;
     height: 100%;
     background-color: white;
