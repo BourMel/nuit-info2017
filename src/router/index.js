@@ -8,6 +8,7 @@ import Trafic from '../components/Trafic.vue'
 import Prevention from '../components/Prevention.vue'
 import Login from '../components/Login.vue'
 import SignUp from '../components/Signup.vue'
+import PageNotFound from '../components/PageNotFound.vue'
 
 import Urgence2 from '../components/Urgence/Urgence2.vue'
 import Urgence3 from '../components/Urgence/Urgence3.vue'
@@ -77,6 +78,11 @@ export default new Router({
       path: '/urgence/5',
       name: 'urgence5',
       component: Urgence5
+    },
+    {
+      path: '*',
+      name: 'page404',
+      component: PageNotFound
     }
   ],
   mode: "history"
