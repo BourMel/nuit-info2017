@@ -8,8 +8,8 @@
       <router-link :to="{ name: 'profil' }" tag="li"><img src="src/assets/icone_profil.svg"/></router-link>
       <router-link :to="{ name: 'conduite' }" tag="li"><img src="src/assets/icone_conduite.svg"/></router-link>
       <router-link :to="{ name: 'urgence' }" tag="li"><img src="src/assets/icone_urgence.svg"/></router-link>
-      <router-link :to="{ name: 'trafic' }" tag="li"><img src="src/assets/icone_conduite.svg"/></router-link>
-      <router-link :to="{ name: 'prevention' }" tag="li"><img src="src/assets/icone_conduite.svg"/></router-link>
+      <router-link :to="{ name: 'trafic' }" tag="li"><img src="src/assets/icone_trafic.svg"/></router-link>
+      <router-link :to="{ name: 'prevention' }" tag="li"><img src="src/assets/icone_infos.svg"/></router-link>
     </ul>
   </div>
 </template>
@@ -63,7 +63,7 @@ ul li {
     list-style: none;
 }
 ul li img {
-    width: 30px;
+    width: 25px;
 }
 div:nth-child(2) {
     padding: 70px 0 70px;

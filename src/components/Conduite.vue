@@ -67,26 +67,33 @@ export default {
 .conduite {
 }
 .citation {
-  font-style: italic;
-  font-size: 72px;
-  padding: 42px;
+    font-family: 'Lato';
+    font-style: italic;
+  font-size: 1.4em;
+  padding: 30px 20px 0;
 }
 .citation::before {
-  content: '❝';
+  content: '“';
 }
 .citation::after {
-  content: '❞';
+  content: '”';
 }
 #player {
-
+    padding: 20px 20px 0;
+}
+#player::before {
+    display: block;
+    content: '• • •';
+    font-size: 1.2em;
+    margin-bottom: 20px;
 }
 #player .btn {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 200px;
+  border-radius: 50%;
   border: 3px solid #fff;
   margin: auto;
   text-align: center;
