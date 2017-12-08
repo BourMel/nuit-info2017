@@ -106,7 +106,6 @@
         //afficher le bon niveau (bdd)
         var cache = document.getElementById("cache");
         cache.style.display = 'block';
-        cache.style.top = 0;
 
         switch(e.target.id) {
           case "radio":
@@ -143,6 +142,9 @@
 </script>
 
 <style scoped>
+    #app {
+        background: linear-gradient(135deg, red, blue) !important;
+    }
 
   ul {
     position: relative;
@@ -159,6 +161,7 @@
     display: none;
     margin: auto;
     position: absolute;
+    top: 0;
     z-index:1;
     width: 100%;
     height: 100%;
