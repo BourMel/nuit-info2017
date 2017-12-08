@@ -41,5 +41,6 @@ export default new Router({
       name: 'prevention',
       component: Prevention
     }
-  ]
+  ],
+  mode: "history"
 });
