@@ -47,10 +47,12 @@ body {
     width: 100%;
     display: inline-block;
     margin: 0;
-    padding-top: 20px;
+    padding-top: 10px;
     position: fixed;
     cursor: pointer;
     font-family: 'La Belle Aurore';
+    background-color: #FFF;
+    color: #f2a487;
 }
 ul {
     padding: 0;
@@ -59,8 +61,8 @@ ul {
 ul li {
     list-style: none;
 }
-#home {
-    padding: 150px 0 60px;
+div:nth-child(2) {
+    padding: 70px 0 70px;
 }
 .sidebar {
     width: 100%;
