@@ -5,11 +5,11 @@
     </router-link>
     <router-view></router-view>
     <ul class="sidebar">
-      <router-link :to="{ name: 'profil' }" tag="li">Profil</router-link>
+      <router-link :to="{ name: 'profil' }" tag="li"><img src="src/assets/icone_profil.svg"/></router-link>
       <router-link :to="{ name: 'conduite' }" tag="li"><img src="src/assets/icone_conduite.svg"/></router-link>
-      <router-link :to="{ name: 'urgence' }" tag="li">Urgence</router-link>
-      <router-link :to="{ name: 'trafic' }" tag="li">Trafic</router-link>
-      <router-link :to="{ name: 'prevention' }" tag="li">Prévention</router-link>
+      <router-link :to="{ name: 'urgence' }" tag="li"><img src="src/assets/icone_urgence.svg"/></router-link>
+      <router-link :to="{ name: 'trafic' }" tag="li"><img src="src/assets/icone_trafic.svg"/></router-link>
+      <router-link :to="{ name: 'prevention' }" tag="li"><img src="src/assets/icone_infos.svg"/></router-link>
     </ul>
   </div>
 </template>
@@ -54,6 +54,7 @@ body {
     font-family: 'La Belle Aurore';
     background-color: #FFF;
     color: #f2a487;
+    z-index:1;
 }
 ul {
     padding: 0;
@@ -63,7 +64,7 @@ ul li {
     list-style: none;
 }
 ul li img {
-    width: 30px;
+    width: 25px;
 }
 div:nth-child(2) {
     padding: 70px 0 70px;
