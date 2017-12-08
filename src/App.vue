@@ -37,7 +37,8 @@ body {
     display: flex;
     flex-direction: column;
     overflow: scroll;
-    background-color: linear-gradient(135deg, #FFC6B0, #E8835A);
+    background: linear-gradient(135deg, #FFC6B0, #E8835A);
+    background-color: #f09c7a;
     font-family: 'Lato', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
