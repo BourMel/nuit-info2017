@@ -6,6 +6,8 @@ import Conduite from '../components/Conduite.vue'
 import Urgence from '../components/Urgence.vue'
 import Trafic from '../components/Trafic.vue'
 import Prevention from '../components/Prevention.vue'
+import Login from '../components/Login.vue'
+import SignUp from '../components/Signup.vue'
 
 Vue.use(Router);
 
@@ -40,6 +42,16 @@ export default new Router({
       path: '/prevention',
       name: 'prevention',
       component: Prevention
+    },
+    {
+      path: '/login',
+      name: 'login',
+      component: Login
+    },
+    {
+      path: '/signup',
+      name: 'signup',
+      component: SignUp
     }
   ],
   mode: "history"

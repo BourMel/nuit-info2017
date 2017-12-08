@@ -8,15 +8,23 @@
       <router-link :to="{ name: 'trafic' }" tag="li">Trafic</router-link>
       <router-link :to="{ name: 'prevention' }" tag="li">Prévention</router-link>
     </ul>
+    <button @click="signOut">Déconnexion</button>
   </div>
 </template>
 
 <script>
+import { firebaseApp } from '../firebaseApp'
 export default {
   name: 'home',
   data () {
     return {
       msg: 'Bienvenue !'
+    }
+  },
+  methods: {
+    signOut() {
+      this.$store.dispatch('signOut');
+      firebaseApp.auth().signOut();
     }
   }
 }
