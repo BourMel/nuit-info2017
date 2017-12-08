@@ -29,10 +29,10 @@
     <p class="maintext">3. Déterminez la nature de l'accident et les risques éventuels</p>
 
     <div class="nav">
-    <router-link :to="{ name: 'urgence' }" tag="h1" class="precedent">
+    <router-link :to="{ name: 'urgence2' }" tag="h1" class="precedent">
       Précédent
     </router-link>
-    <router-link :to="{ name: 'urgence3' }" tag="h1" class="suivant">
+    <router-link :to="{ name: 'urgence4' }" tag="h1" class="suivant">
       Suivant
     </router-link>
     </div>
