@@ -5,7 +5,7 @@
     </router-link>
     <router-view></router-view>
     <ul class="sidebar">
-      <router-link :to="{ name: 'profil' }" tag="li">Profil</router-link>
+      <router-link :to="{ name: 'profil' }" tag="li"><img src="src/assets/icone_conduite.svg"/></router-link>
       <router-link :to="{ name: 'conduite' }" tag="li">Conduite</router-link>
       <router-link :to="{ name: 'urgence' }" tag="li">Urgence</router-link>
       <router-link :to="{ name: 'trafic' }" tag="li">Trafic</router-link>
@@ -47,10 +47,12 @@ body {
     width: 100%;
     display: inline-block;
     margin: 0;
-    padding-top: 20px;
+    padding-top: 10px;
     position: fixed;
     cursor: pointer;
     font-family: 'La Belle Aurore';
+    background-color: #FFF;
+    color: #f2a487;
 }
 ul {
     padding: 0;
@@ -59,8 +61,11 @@ ul {
 ul li {
     list-style: none;
 }
-#home {
-    padding: 150px 0 60px;
+ul li img {
+    width: 30%;
+}
+div:nth-child(2) {
+    padding: 70px 0 70px;
 }
 .sidebar {
     width: 100%;
