@@ -133,8 +133,8 @@
             break;
         }
       },
-      hide: function (e) {
-        e.target.style.display = 'none';
+      hide: function () {
+        document.getElementById('cache').style.display = 'none';
       }
     }
   }
