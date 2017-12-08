@@ -3,7 +3,7 @@
     <h1>Page de profil</h1>
 
     <div id="cache" v-on:click="hide">
-      {{ message }}
+      <p>{{ message }}</p>
     </div>
 
     <ul>
@@ -141,7 +141,11 @@
     width: 100%;
     height: 100%;
     background-color: white;
+  }
+
+  #cache p {
     font-size: 3em;
+    color: black;
   }
 
   progress {
