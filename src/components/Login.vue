@@ -1,5 +1,6 @@
 <template>
   <div>
+    <p><em>Connectez-vous avec : 'test@example.com' et 'azeaze'</em></p>
     <h1>Connexion</h1>
     <label>Adresse mail :
       <input type="email" v-model="email">
@@ -22,8 +23,8 @@ export default {
   name: 'login',
   data() {
     return {
-      email: '',
-      password: '',
+      email: 'test@example.com',
+      password: 'azeaze',
       error: {
         message: ''
       }
