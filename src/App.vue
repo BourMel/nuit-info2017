@@ -22,6 +22,7 @@ export default {
 
 <style>
 @import url('https://fonts.googleapis.com/css?family=La+Belle+Aurore|Lato=200+400+700');
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
 
 *, *:after, *:before {
     box-sizing: border-box;
@@ -36,8 +37,8 @@ body {
     display: flex;
     flex-direction: column;
     overflow: scroll;
-    background: linear-gradient(135deg, #FFC6B0, #E8835A);
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    background-color: linear-gradient(135deg, #FFC6B0, #E8835A);
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
