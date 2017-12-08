@@ -2,9 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=La+Belle+Aurore');
 
 
-#app {
-    background-color: red;
-}
+
 
 .maintext {
     font-weight: 200;
