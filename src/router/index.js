@@ -7,6 +7,11 @@ import Urgence from '../components/Urgence.vue'
 import Trafic from '../components/Trafic.vue'
 import Prevention from '../components/Prevention.vue'
 
+import Urgence2 from '../components/Urgence/Urgence2.vue'
+import Urgence3 from '../components/Urgence/Urgence3.vue'
+import Urgence4 from '../components/Urgence/Urgence4.vue'
+import Urgence5 from '../components/Urgence/Urgence5.vue'
+
 Vue.use(Router);
 
 export default new Router({
@@ -27,7 +32,7 @@ export default new Router({
       component: Conduite
     },
     {
-      path: '/urgence',
+      path: '/urgence/1',
       name: 'urgence',
       component: Urgence
     },
@@ -40,6 +45,26 @@ export default new Router({
       path: '/prevention',
       name: 'prevention',
       component: Prevention
+    },
+    {
+      path: '/urgence/2',
+      name: 'urgence2',
+      component: Urgence2
+    },
+    {
+      path: '/urgence/3',
+      name: 'urgence3',
+      component: Urgence3
+    },
+    {
+      path: '/urgence/4',
+      name: 'urgence4',
+      component: Urgence4
+    },
+    {
+      path: '/urgence/5',
+      name: 'urgence5',
+      component: Urgence5
     }
   ],
   mode: "history"

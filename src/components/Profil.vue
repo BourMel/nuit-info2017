@@ -7,6 +7,9 @@
       <p>{{ message }}</p>
     </div>
 
+    <h2>Sam</h2>
+    <div id="sam"></div>
+
     <ul>
       <!-- RADIO  -->
       <li>
