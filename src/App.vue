@@ -5,8 +5,8 @@
     </router-link>
     <router-view></router-view>
     <ul class="sidebar">
-      <router-link :to="{ name: 'profil' }" tag="li"><img src="src/assets/icone_conduite.svg"/></router-link>
-      <router-link :to="{ name: 'conduite' }" tag="li">Conduite</router-link>
+      <router-link :to="{ name: 'profil' }" tag="li">Profil</router-link>
+      <router-link :to="{ name: 'conduite' }" tag="li"><img src="src/assets/icone_conduite.svg"/></router-link>
       <router-link :to="{ name: 'urgence' }" tag="li">Urgence</router-link>
       <router-link :to="{ name: 'trafic' }" tag="li">Trafic</router-link>
       <router-link :to="{ name: 'prevention' }" tag="li">Prévention</router-link>
@@ -21,7 +21,7 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=La+Belle+Aurore');
+@import url('https://fonts.googleapis.com/css?family=La+Belle+Aurore|Lato=200+400+700');
 
 *, *:after, *:before {
     box-sizing: border-box;
@@ -62,7 +62,7 @@ ul li {
     list-style: none;
 }
 ul li img {
-    width: 30%;
+    width: 30px;
 }
 div:nth-child(2) {
     padding: 70px 0 70px;
