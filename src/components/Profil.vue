@@ -104,6 +104,7 @@
     methods: {
       display: function (e) {
         //afficher le bon niveau (bdd)
+
         var cache = document.getElementById("cache");
         cache.style.display = 'block';
 
@@ -155,6 +156,7 @@
   .badge {
     max-height:200px;
     margin-top: 20px;
+    cursor:pointer;
   }
 
   #cache {
@@ -166,6 +168,7 @@
     width: 100%;
     height: 100%;
     background-color: white;
+    cursor:pointer;
   }
 
   #cache p {
